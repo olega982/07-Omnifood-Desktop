@@ -1,0 +1,167 @@
+/*
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+- Font weights:
+Default:400
+Medium:500
+Semi-bold: 600.
+Bold:700
+
+- Line heights:
+Default: 1
+Small: 1.05
+Mdium:1.2
+Paragraf default: 1.6
+
+-- 02 COLORS: 
+Primary: #eb984e 
+Tints:
+#fdf2e9
+#fbeadc
+Shades:#e67e22
+Accents:
+Greys:
+#333
+#555
+
+
+--03 BORDER_RADIUS
+border-radius:0.8rem
+
+-04 Letterspacing: 
+  letter-spacing: 0.75px;
+
+
+
+*/
+
+.btn-mrgn-right {
+  margin-right: 1.6rem !important;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px;  */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ************************ */
+/* GRIDS AND CONTAINERS */
+/* ************************ */
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 2.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+/* ************************ */
+/* COMMON ELEMENTS */
+/* ************************ */
+
+.btn--action:link,
+.btn--action:visited {
+  color: #fff;
+  background-color: #eb984e;
+}
+
+.btn--action:hover,
+.btn--action:active {
+  background-color: #e67e22;
+}
+
+.btn--descr:link,
+.btn--descr:visited {
+  color: #333;
+  background-color: #fff;
+}
+
+.btn--descr:hover,
+.btn--descr:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.heading-third {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.align-cell-center {
+  align-self: center;
+}
+
+.margin-buttom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+/* ************************ */
+/* LIST ELEMENTS */
+/* ************************ */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+.item {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.item-icon {
+  color: #e67e22;
+  height: 3rem;
+  width: 3rem;
+}
