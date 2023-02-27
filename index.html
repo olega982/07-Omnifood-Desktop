@@ -13,14 +13,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="queries.css">
+
   </head>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <img class="logo" src="content/img/omnifood-logo.png" alt="logo" />
-      <nav class="main-nav">
+      <nav class="main-nav ">
         <ul class="main-nav-list">
           <li><a class="nav-item" href="#">How is works</a></li>
           <li><a class="nav-item" href="#">Sample meals</a></li>
@@ -29,6 +31,10 @@
           <li><a class="nav-item nav-cta" href="#">Try for Free</a></li>
         </ul>
       </nav>
+      <div class="mobile-elements">
+        <ion-icon name="close-outline" class="mobile-icon"></ion-icon>
+        <ion-icon name="menu-outline" class="mobile-icon"></ion-icon>
+      </div>
     </header>
 
     <main>
@@ -178,7 +184,7 @@
               Omnifood AI chooses from 5,000+ recipes
             </h2>
         </div>
-        <div class="container grid grid--3-cols buttom-medium-margin">
+        <div class="container meals-cards grid grid--3-cols buttom-medium-margin">
           <div class="meal">
             <img src="content/img/meals/meal-1.jpg" alt="Japanese Gyozas" class="meal-img">
             <div class="meal-card">
@@ -230,7 +236,7 @@
               <h2 class="heading-secondary">
                 Once you try you cant go back
               </h2>
-              <div class=" grid grid--2-cols">
+              <div class="testimonials grid grid--2-cols">
                 <figure class="feedback">
                   <img class="feedback-person-photo" src="content/img/customers/customer-1.jpg" alt="feedback-person-photo">
                   <p class="feedback-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
